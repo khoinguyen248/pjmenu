@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco w Salamanca</title>
+    <link rel="stylesheet" href="styletaco.css">
+    <link rel="stylesheet" href="">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="Remove-bg.ai_1722602373422.png" alt="">
+
+        <div class="header1">
+            <ul class="heads">
+                <li><a href="http://127.0.0.1:5501/pjmenu.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5501/pjmenu1.html">Menu</a></li>
+                    <li><a href="http://127.0.0.1:5501/pjmenu2.html">Support</a></li>
+                    <li><a href="http://127.0.0.1:5501/tacotime.html">Taco</a></li>
+                   
+            </ul>
+
+           <button class="soc"> <img src="menu-svgrepo-com 1.png" alt="" ></button>
+        </div>
+    </div>
+
+
+      <div class="body1" >
+        <p>Taco with Lalo Salamanca</p>
+        <video width="600" controls>
+            <source src="y2mate.com - how to make the salamanca taco_v720P.mp4" type="video/mp4">
+      
+        </video>
+
+        <p>Submit your taco's pictures here for amazing prizes</p>
+        
+      </div>
+      <div class="file-upload">
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+      
+        <div class="image-upload-wrap">
+          <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+          <div class="drag-text">
+            <h3>Drag and drop a file or select add Image</h3>
+          </div>
+        </div>
+        <div class="file-upload-content">
+          <img class="file-upload-image" src="#" alt="your image" />
+          <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+          </div>
+        </div>
+      </div>
+      
+
+</body>
+</html>
