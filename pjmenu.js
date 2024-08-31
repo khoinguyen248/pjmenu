@@ -1,5 +1,5 @@
 
-localStorage.removeItem('somon')
+
 const bcbo = document.querySelector('.banhbo');
 const nutbcbo = document.querySelector('.nutbcb');
 const tenbcbo = document.querySelector('.tenbcbo');
@@ -77,7 +77,7 @@ const tenxucxich = document.querySelector('.tenxucxich');
         let counting = document.querySelector('.counterchild')
         let counterbutton = document.querySelector('.counterbutton')
         
-       
+        
 let hoadon = JSON.parse(localStorage.getItem('hoadon') || '[]') 
 
 function addMeal(priceElement, nameElement){
@@ -110,7 +110,7 @@ function addMeal2(priceElement, nameElement){
 
 
 
-let counter =0
+let counter = localStorage.getItem('somon') || 0
 function bodem(){
     
     counter++
@@ -119,8 +119,10 @@ function bodem(){
 
 }
 
+const dem = localStorage.getItem('somon') || 0;
 
-
+counting.innerHTML = dem
+console.log(dem)
 
 
 

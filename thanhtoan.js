@@ -20,7 +20,7 @@ function updateTotal() {
 
 
 
-function currentbill(){
+(function currentbill(){
     let storedHoadon2 = JSON.parse(localStorage.getItem('hoadon'));
     
     
@@ -49,7 +49,13 @@ function currentbill(){
     cha3.appendChild(nut)
     nut.addEventListener('click', () => {
         cha.removeChild(cha1);
-       
+        let count = localStorage.getItem('somon') || 0;
+
+        if(count > 0){
+            count--
+            localStorage.setItem('somon', count)
+        }
+
         for (let i = 0; i < storedHoadon2.length; i++) {
             if (storedHoadon2[i].name === item.name) {
                 storedHoadon2.splice(i, 1);
@@ -59,18 +65,26 @@ function currentbill(){
         }
         localStorage.setItem('hoadon', JSON.stringify(storedHoadon2));
         updateTotal()
+        totalinPaid()
     });
     updateTotal()
     });
-}
+    totalinPaid()
+})();
 
 function totalinPaid(){
     let totalstored = localStorage.getItem('total')
     let soluong = JSON.parse(localStorage.getItem('hoadon'))
     let chachacha = document.getElementById('cha')
+
+    let existingTotalRow = document.querySelector('.total-row');
+    if (existingTotalRow) {
+      chachacha.removeChild(existingTotalRow);
+    }
    
     let cha2 = document.createElement('div')
-     cha2.className = 'flex j-c text w-85'
+     
+     cha2.className = 'flex j-c text w-85 total-row'
      cha2.style.padding = '40px'
      cha2.style.fontFamily = '"Be Vietnam Pro", sans-serif'
      cha2.style.color = '#E84949'
@@ -84,8 +98,8 @@ function totalinPaid(){
     cha2.appendChild(gia)
 }
 
-nuttinhtien.addEventListener("click", currentbill)
-nuttinhtien1.addEventListener("click", totalinPaid)
+
+
 let headas = document.querySelector('.heads')
 let nut = document.querySelector('.soc')
 
@@ -101,3 +115,19 @@ function showing(){
 }
 
 nut.addEventListener("click", showing)
+
+
+
+const modal = document.querySelector("#modal-container");
+
+const handleClick = (buttonId) => {
+  modal.classList = [];
+  modal.classList.add(buttonId);
+  document.body.classList.add("modal-active");
+  console.log("tinh tien")
+};
+
+modal.addEventListener("click", () => {
+  modal.classList.add("out");
+  document.body.classList.remove("modal-active");
+});
