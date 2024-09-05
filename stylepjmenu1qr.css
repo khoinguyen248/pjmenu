@@ -125,7 +125,7 @@
             width: 100%;
             display: flex;
             overflow: hidden;
-            justify-content: space-between;
+            gap: 120px;
             margin-bottom: 100px;
             align-items:  center;
             img{
