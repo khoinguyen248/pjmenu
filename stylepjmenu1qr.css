@@ -122,14 +122,15 @@
             
         }
         .menu1-1{
+            width: 100%;
             display: flex;
             overflow: hidden;
             justify-content: space-between;
             margin-bottom: 100px;
             align-items:  center;
             img{
-                width: 100px;
-                height: 100px;
+                width: 120px;
+                height: 152px;
             }
             .items{
                 width: 30%;
@@ -165,6 +166,11 @@
             }
             
     
+        }
+
+        .contain1{
+            display: flex;
+            flex-direction: column;
         }
     
     }
