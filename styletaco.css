@@ -74,6 +74,7 @@
         letter-spacing: 0.18000000715255737px;
        
         color: #343D68;
+        margin-top: 40px;
   }
 }
 
@@ -204,3 +205,17 @@
       height: 100%;
       width: 100%;}
     }
+
+    .footer{
+      margin-top: 100px;
+      padding: 20px 200px;
+      display: flex;
+      justify-content: space-between;
+      font-family: "Be Vietnam Pro", sans-serif;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 26.3px;
+                  color: #ffffff;
+                  background-color: #343D68;
+  }
+  
