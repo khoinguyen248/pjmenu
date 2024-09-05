@@ -20,7 +20,7 @@
     box-shadow: 0px 2px 1px 0px #0000001F;
 
     box-shadow: 0px 1px 1px 0px #00000024;
-    
+    z-index: 1000;
     img{
         width: 80px;
         height: 80px;
@@ -190,3 +190,17 @@
   transition: all .2s ease;
 }
 
+.image-slider{
+   height: 500px;
+   width: 400px;
+
+   z-index: 1;
+  
+   .imgcont{
+    height: 100px;
+    width: 100px;
+   }
+    img{
+      height: 100%;
+      width: 100%;}
+    }
