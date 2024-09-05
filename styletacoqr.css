@@ -75,16 +75,17 @@
 
     .body1{
         margin-left: 0px;
-        width: calc(100% - 40px);
+        width: 100% ;
         margin-top: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow: hidden;
         margin-right: 0px;
+        gap: 40px;
        p{
          text-align: center;
-         margin-bottom: 40px;
+        
          font-family: "Be Vietnam Pro", sans-serif;
              font-size: 16px;
              font-weight: 600;
@@ -92,7 +93,7 @@
              letter-spacing: 0.18000000715255737px;
             
              color: #343D68;
-             margin-top: 40px;
+             margin: auto;
        }
        video{
         width: calc(100% - 40px);
@@ -102,9 +103,8 @@
 
      .file-upload {
         background-color: #ffffff;
-        width: calc(100% - 40px);
-        margin-left: 0px;
-        margin-right: 0px;
+        width: 100%;
+        margin: auto;
         padding: 20px;
       }
 

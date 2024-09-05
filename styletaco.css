@@ -76,6 +76,10 @@
         color: #343D68;
         margin-top: 40px;
   }
+  video{
+    width: calc(100% - 400px);
+    height: 500px;
+  }
 }
 
 
